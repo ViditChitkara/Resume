@@ -1,0 +1,169 @@
+.navbar-inverse {
+  background: rgba(62, 195, 246, 0);
+  border-bottom: none;
+}
+
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #22F;
+}
+
+
+
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+  padding-top: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.small-logo {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 2px;
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+  background: gold;
+}
+.big-logo-row .big-logo-container {
+  padding-top: 50px;
+}
+.big-logo-row h1 {
+  font-size: 4em;
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+@media (min-width: 400px) {
+  .big-logo-row h1 {
+    font-size: 4.5em;
+  }
+}
+@media (min-width: 440px) {
+  .big-logo-row h1 {
+    font-size: 5.5em;
+  }
+}
+@media (min-width: 500px) {
+  .big-logo-row h1 {
+    font-size: 6.5em;
+  }
+}
+@media (min-width: 630px) {
+  .big-logo-row h1 {
+    font-size: 7.5em;
+  }
+}
+@media (min-width: 768px) {
+  .big-logo-row h1 {
+    font-size: 9em;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .big-logo-row h1 {
+    font-size: 8em;
+  }
+}
+
+/* *********************************
+           Flip Card
+  ********************************** */
+
+.flip {
+  -webkit-perspective: 800;   
+          perspective: 800;
+        position: relative;
+        text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+.flip .card {
+    width: 270px;
+    height: 178px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #fff;
+   
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+   z-index: 2;
+}
+.flip .card .front {
+   position: absolute;
+   width: 270px;
+   z-index: 1;
+}
+.flip .card .img {
+   position: relaitve;
+   width: 270px;
+   height: 178px;
+   z-index: 1;
+   border: 2px solid #000;
+}
+.flip .card .back {
+  padding-top: 10%;
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+  .inner{margin:0px !important;}
+
+.contact{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact>div{
+  display: flex;
+}
+
+.contact i{
+    color: grey;
+    font-size: 20px;
+    margin-right: 4px;
+
+}
+
+.contact p{
+    color: grey;
+}
+
+.contact a{
+    text-decoration: none;
+    color: grey;
+}
+
+.contact a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: grey;
+}
